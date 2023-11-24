@@ -17,7 +17,7 @@ pygame.init()
 screen = pygame.display.set_mode(SCREEN_RESOLUTION)
 clock = pygame.time.Clock()
 
-grid = World
+grid = World()
 terminate = False
 
 #Time event
@@ -44,11 +44,9 @@ def game_loop_scene():
                     grid.rotate()
             elif event.type == timer_event:
                 grid.move(0, 1)
-        
+
 
         #Draw
-        World()
-        grid()
         grid.draw(screen)
         pygame.display.update()
 
