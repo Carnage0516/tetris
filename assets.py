@@ -41,7 +41,7 @@ ILblock = [
 block_list = [Iblock, Tblock, Oblock, Sblock, ISblock, Lblock, ILblock]
 
 
-class World():
+class World:
     """Class that defines the world in which the agents will live.
     The world size is of 300x600 by default and contains 20 rows by 10 columns with a cell size of 30.
     """
